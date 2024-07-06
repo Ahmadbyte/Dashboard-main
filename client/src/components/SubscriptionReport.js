@@ -18,6 +18,7 @@ const SubscriptionReport = () => {
 
       recognition.onstart = () => {
         setListening(true);
+        alert('Speak Download to download Report')
         console.log('Speech recognition started');
       };
 
@@ -111,6 +112,7 @@ const SubscriptionReport = () => {
         </tbody>
       </table>
       {listening && <p>Listening...</p>}
+      <p>Note: Speak "Download" to download Report..</p>
     </div>
   );
 };
